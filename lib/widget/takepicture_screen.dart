@@ -75,7 +75,7 @@ class TakePictureScreenState extends State<TakePictureScreen> {
               await _initializeControllerFuture;
               final image = await _controller.takePicture();
 
-              final savedImage= await _moveFile(image);
+              final savedImage = await _moveFile(image);
 
               if (!context.mounted) return;
 
